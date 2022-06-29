@@ -1,17 +1,22 @@
 import React from 'react';
+import styled from 'styled-components';
 import './Hello.css';
 
 function Hello(){
+    const StyleButton = styled.button`
+        color: red;
+        background-color: gray;
+    `
+
     const PracticeStyle = {
         marginTop: '10px',
         backgroundColor: 'blue',
     };
+    
     return (
-        <>
-            <div className="practiceStyle">Hello Wolrd!</div>
-            <div className="practiceStyle">Hello Wolrd!</div>
-            <div className="practiceStyle">Hello Wolrd!</div>
-        </>
-        );
+        <StyleButton>
+            My Button
+        </StyleButton>
+    );
 }
 export default Hello;
